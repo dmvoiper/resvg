@@ -85,6 +85,8 @@ macro_rules! try_opt_warn_or {
     };
 }
 
+pub use raqote;
+
 #[cfg(feature = "cairo-backend")]
 pub use cairo;
 
@@ -94,8 +96,8 @@ pub use resvg_qt as qt;
 #[cfg(feature = "skia-backend")]
 pub use resvg_skia as skia;
 
-/// wtf! #[cfg(feature = "raqote-backend")]
-pub use raqote;
+// wtf! #[cfg(feature = "raqote-backend")]
+//pub use raqote;
 
 pub use usvg::{self, Error};
 
