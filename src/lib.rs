@@ -200,7 +200,8 @@ pub fn default_backend() -> Box<dyn Render> {
         return Box::new(backend_raqote::Backend);
     }
 
-    unreachable!("at least one backend must be enabled")
+    //unreachable!("at least one backend must be enabled")
+    return Box::new(backend_raqote::Backend);
 }
 
 pub(crate) fn use_shape_antialiasing(
