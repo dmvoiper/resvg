@@ -94,7 +94,7 @@ pub use resvg_qt as qt;
 #[cfg(feature = "skia-backend")]
 pub use resvg_skia as skia;
 
-#[cfg(feature = "raqote-backend")]
+/// wtf! #[cfg(feature = "raqote-backend")]
 pub use raqote;
 
 pub use usvg::{self, Error};
@@ -109,7 +109,7 @@ pub mod backend_qt;
 #[cfg(feature = "skia-backend")]
 pub mod backend_skia;
 
-#[cfg(feature = "raqote-backend")]
+/// wtf!  #[cfg(feature = "raqote-backend")]
 pub mod backend_raqote;
 
 pub mod utils;
