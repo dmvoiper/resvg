@@ -46,7 +46,7 @@ raqote = { version = "0.7.8", default-features = false, optional = true }
 resvg-skia = { path = "bindings/resvg-skia", version = "0.9", optional = true }
 
 [features]
-default = ["text"]
+default = ["text", "raqote"]
 cairo-backend = ["cairo-rs", "png/png-encoding"]
 qt-backend = ["resvg-qt"]
 raqote-backend = ["raqote"]
